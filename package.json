@@ -2,10 +2,10 @@
   "name": "ReactPortfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/index.js",
   "scripts": {
     "start": "node server/index.js",
-    "develop": "concurrently \"cd server && npm start\" \"cd client && npm start\"",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build"
@@ -37,6 +37,7 @@
     "graphql": "^16.2.0",
     "graphql-tag": "^2.12.6",
     "mongoose": "^6.1.6",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "jwt-decode":"^3.1.2"
   }
 }
