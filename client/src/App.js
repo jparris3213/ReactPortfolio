@@ -13,6 +13,9 @@ import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 import Navigation from "./pages/Nav";
 import Home from "./pages/Home";
+import Media from "./pages/Media"
+import Contact from "./pages/contact";
+import Development from "./pages/Development"
 
 
 // making GraphQL API endpoint
@@ -46,6 +49,11 @@ function App() {
         <Navigation />
         <Routes>
           <Route exact path="/" element = {<Home />}/>
+          <Route exact path="/media" element = {<Media />}/>
+          <Route exact path="/contact" element = {<Contact/>}/>
+          <Route exact path="/development" element = {<Development />}/>
+          <Route path="*" element={<Home />} />
+
         </Routes>
       </Router>
     </ApolloProvider>
