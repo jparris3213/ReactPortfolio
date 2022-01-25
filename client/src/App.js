@@ -48,7 +48,7 @@ function App() {
       <Router>
         <Navigation />
         <Routes>
-          <Route exact path="/" element = {<Home />}/>
+          <Route path="/" element = {<Home />}/>
           <Route exact path="/media" element = {<Media />}/>
           <Route exact path="/contact" element = {<Contact/>}/>
           <Route exact path="/development" element = {<Development />}/>
