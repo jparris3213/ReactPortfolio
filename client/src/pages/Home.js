@@ -27,7 +27,7 @@ const Home = () => {
             </p>
             <p2>
               In fact, while it doesn't currently DO anything, if the light in
-              the corner is green{" "}
+              the corner is green {!data ? "🔴" : data}
             </p2>
             <p>
               the back end server is connected to the front-end successfully
